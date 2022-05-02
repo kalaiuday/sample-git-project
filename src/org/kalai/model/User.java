@@ -1,6 +1,17 @@
 package org.kalai.model;
 
 public class User {
+	
+	public User() {
+		super();
+	}
+
+
+	public User(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
 
 	private String name;
 	private int age;
