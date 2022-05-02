@@ -9,13 +9,10 @@ public class User {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
-
+	
 	@Override
 	public String toString() {
-		return "User [name=" + name + "]";
+		return "User [name=" + name + ", age=" + age + "]";
 	}
 
 	public int getAge() {
@@ -25,6 +22,8 @@ public class User {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	
+	
 	
 	
 	
