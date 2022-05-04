@@ -1,6 +1,17 @@
 package org.kalai.model;
 
 public class User {
+	
+	public User() {
+		super();
+	}
+
+
+	public User(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
 
 	private String name;
 	private int age;
@@ -9,8 +20,10 @@ public class User {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	
+	@Override
+	public String toString() {
+		return "User [name=" + name + ", age=" + age + "]";
 	}
 
 	public int getAge() {
@@ -20,6 +33,8 @@ public class User {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	
+	
 	
 	
 	
